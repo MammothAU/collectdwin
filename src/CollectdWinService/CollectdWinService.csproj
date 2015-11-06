@@ -113,6 +113,7 @@
     <Compile Include="config\CollectdWinConfig.cs" />
     <Compile Include="config\StatsdPluginConfig.cs" />
     <Compile Include="config\WindowsPerformanceCounterPluginConfig.cs" />
+    <Compile Include="config\WriteGraphitePluginConfig.cs" />
     <Compile Include="config\WriteHttpPluginConfig.cs" />
     <Compile Include="ConsolePlugin.cs" />
     <Compile Include="Histogram.cs" />
@@ -131,6 +132,7 @@
     <Compile Include="TypesDB.cs" />
     <Compile Include="Util.cs" />
     <Compile Include="WindowsPerformanceCounterPlugin.cs" />
+    <Compile Include="WriteGraphitePlugin.cs" />
     <Compile Include="WriteHttpPlugin.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -156,6 +158,9 @@
     </None>
     <None Include="config\WindowsPerformanceCounter.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="config\WriteGraphite.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="config\WriteHttp.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
